@@ -1,11 +1,13 @@
 def pizza_pasta
-  (1..100).each do |x|
-    if x%3 == 0
+  n = 0
+  num = n
+  while num <= 100
+    num += 1
+    if num%3 == 0
       puts 'pizza'
-    elsif x%5 == 0
+    elsif num%5 == 0
       puts 'pasta'
-    else
-      puts x
+    else puts num
     end
   end
 end
